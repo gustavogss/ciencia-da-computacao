@@ -1,0 +1,1 @@
+# HASHMAP E DICK :

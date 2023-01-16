@@ -1,0 +1,32 @@
+# Módulo Ciência da Computação 
+
+- 1. Introdução a Python:
+  - Dia 01 - Aprendendo Python
+  - Dia 02 - Entrada e Saída de Dados
+  - Dia 03 - Testes
+  - [ ] Dia 04 - Projeto Job Insigths
+- 2. Padrões de Projeto:
+  - Dia 01 - POO em Python
+  - Dia 02 - Padrões - Iterator, Adapter, Strategy
+  - Dia 03 - Padrões - Decorator, Observer, Factory
+  - [ ] Dia 04 - Projeto Relatório de Estoque
+- 3. Redes e Raspagem de Dados:
+  - Dia 01 - Arquitetura de Redes
+  - Dia 02 - Raspagem de Dados
+  - Dia 03 - Outras Ferramentas de Raspagem
+  - [ ] Dia 04 - Projeto Tech news
+- 4. Algoritmos:
+  - Dia 01 - Complexidade de Algoritmos
+  - Dia 02 - Recursividade e Estratégias para a Solução de Problemas
+  - Dia 03 - Algoritmos de Ordenação e Busca
+  - [ ] Dia 04 - Projeto Algoritmos
+- 5. Estrutura de Dados I:
+  - Dia 01 - Arquitetura de Computadores
+  - Dia 02 - Arrays
+  - Dia 03 - Nó e Listas Encadeadas
+  - Dia 04 - Pilhas e Filas
+  - [ ] Dia 05 - Projeto TING - Trybe Is Not Google
+- 6. Estrutura de Dados II:
+  - Dia 01 - Hashmap e Dict
+  - Dia 02 - Set
+  - [ ] Dia 03 - Projeto - Restaurant Orders
