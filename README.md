@@ -3,7 +3,7 @@
 - 1.Introdução a Python:
   - [Dia 01 - Aprendendo Python](https://github.com/gustavogss/ciencia-da-computacao/blob/main/Introducao-a-python/dia-01-aprendendo-python)
   - [Dia 02 - Entrada e Saída de Dados](https://github.com/gustavogss/ciencia-da-computacao/blob/main/Introducao-a-python/dia-02-entrada-e-saida-de-dados)
-  - [Dia 03 - Testes] - (https://github.com/gustavogss/ciencia-da-computacao/blob/main/Introducao-a-python/dia-03-testes)
+  - [Dia 03 - Testes](https://github.com/gustavogss/ciencia-da-computacao/blob/main/Introducao-a-python/dia-03-testes)
   - [ ] Dia 04 - Projeto Job Insigths
 - 2.Padrões de Projeto:
   - [Dia 01 - POO em Python](https://github.com/gustavogss/ciencia-da-computacao/tree/main/padroes-de-projeto/dia-01-poo-em-python)
