@@ -1,32 +1,32 @@
 # Módulo Ciência da Computação 
 
 - 1.Introdução a Python:
-  - Dia 01 - Aprendendo Python
-  - Dia 02 - Entrada e Saída de Dados
-  - Dia 03 - Testes
+  - [Dia 01 - Aprendendo Python](https://github.com/gustavogss/ciencia-da-computacao/blob/main/Introducao-a-python/dia-01-aprendendo-python)
+  - [Dia 02 - Entrada e Saída de Dados](https://github.com/gustavogss/ciencia-da-computacao/blob/main/Introducao-a-python/dia-02-entrada-e-saida-de-dados)
+  - [Dia 03 - Testes] - (https://github.com/gustavogss/ciencia-da-computacao/blob/main/Introducao-a-python/dia-03-testes)
   - [ ] Dia 04 - Projeto Job Insigths
 - 2.Padrões de Projeto:
-  - Dia 01 - POO em Python
-  - Dia 02 - Padrões - Iterator, Adapter, Strategy
-  - Dia 03 - Padrões - Decorator, Observer, Factory
+  - [Dia 01 - POO em Python](https://github.com/gustavogss/ciencia-da-computacao/tree/main/padroes-de-projeto/dia-01-poo-em-python)
+  - [Dia 02 - Padrões - Iterator, Adapter, Strategy](https://github.com/gustavogss/ciencia-da-computacao/tree/main/padroes-de-projeto/dia-02-padores-iterator-adapter-strategy)
+  - [Dia 03 - Padrões - Decorator, Observer, Factory](https://github.com/gustavogss/ciencia-da-computacao/tree/main/padroes-de-projeto/dia-03-padores-decorator-observer-factory)
   - [ ] Dia 04 - Projeto Relatório de Estoque
 - 3.Redes e Raspagem de Dados:
-  - Dia 01 - Arquitetura de Redes
-  - Dia 02 - Raspagem de Dados
-  - Dia 03 - Outras Ferramentas de Raspagem
+  - [Dia 01 - Arquitetura de Redes](https://github.com/gustavogss/ciencia-da-computacao/tree/main/redes-e-raspagem-de-dados/dia-01-arquitetura-de-redes)
+  - [Dia 02 - Raspagem de Dados](https://github.com/gustavogss/ciencia-da-computacao/tree/main/redes-e-raspagem-de-dados/dia-02-raspagem-de-dados)
+  - [Dia 03 - Outras Ferramentas de Raspagem](https://github.com/gustavogss/ciencia-da-computacao/tree/main/redes-e-raspagem-de-dados/dia-03-outras-ferramentas-de-raspagem-de-dados)
   - [ ] Dia 04 - Projeto Tech news
 - 4.Algoritmos:
-  - Dia 01 - Complexidade de Algoritmos
-  - Dia 02 - Recursividade e Estratégias para a Solução de Problemas
-  - Dia 03 - Algoritmos de Ordenação e Busca
+  - [Dia 01 - Complexidade de Algoritmos](https://github.com/gustavogss/ciencia-da-computacao/tree/main/algoritmos/dia-01-complexidade-de-algoritmos)
+  - [Dia 02 - Recursividade e Estratégias para a Solução de Problemas](https://github.com/gustavogss/ciencia-da-computacao/tree/main/algoritmos/dia-02-recursividade-e-estrategias-para-solucao-de-problemas)
+  - [Dia 03 - Algoritmos de Ordenação e Busca](https://github.com/gustavogss/ciencia-da-computacao/tree/main/algoritmos/dia-03-algoritmos-de-ordenacao-e-busca)
   - [ ] Dia 04 - Projeto Algoritmos
 - 5.Estrutura de Dados I:
-  - Dia 01 - Arquitetura de Computadores
-  - Dia 02 - Arrays
-  - Dia 03 - Nó e Listas Encadeadas
-  - Dia 04 - Pilhas e Filas
+  - [Dia 01 - Arquitetura de Computadores](https://github.com/gustavogss/ciencia-da-computacao/tree/main/estrutura-de-dados-I/dia-01-arquitetura-de-computadores)
+  - [Dia 02 - Arrays](https://github.com/gustavogss/ciencia-da-computacao/tree/main/estrutura-de-dados-I/dia-02-arrays)
+  - [Dia 03 - Nó e Listas Encadeadas](https://github.com/gustavogss/ciencia-da-computacao/tree/main/estrutura-de-dados-I/dia-03-no-e-listas-encadeadas)
+  - [Dia 04 - Pilhas e Filas](https://github.com/gustavogss/ciencia-da-computacao/tree/main/estrutura-de-dados-I/dia-04-pilhas-e-filas)
   - [ ] Dia 05 - Projeto TING - Trybe Is Not Google
 - 6.Estrutura de Dados II:
-  - Dia 01 - Hashmap e Dict
-  - Dia 02 - Set
+  - [Dia 01 - Hashmap e Dict](https://github.com/gustavogss/ciencia-da-computacao/tree/main/estrutura-de-dados-II/dia-01-hashmap-e-dick)
+  - [Dia 02 - Set](https://github.com/gustavogss/ciencia-da-computacao/tree/main/estrutura-de-dados-II/dia-02-set)
   - [ ] Dia 03 - Projeto - Restaurant Orders
