@@ -1,5 +1,3 @@
-a = int(input('Digite um número:' ))
-b = int(input('Digite outro número:' ))
 
 def numbers(a,b):
     if (a>b):
@@ -7,4 +5,4 @@ def numbers(a,b):
     else:
          return (f'O numero {b} é maior que o número {a}\n')
      
-print(numbers(a,b))
+print(numbers(3,2))
