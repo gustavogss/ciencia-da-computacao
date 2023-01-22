@@ -137,6 +137,51 @@ frutas.index("maçã")  #retorna o índice onde a fruta está localizada, neste 
 frutas.sort()  #ordena a lista de frutas
 ```
 
+6. all() - verifica se na lista tem todas as strings preenchidas ou numeros diferentes de zero 0:
+
+```
+alunos1 = ["joão", "pedro"]
+alunos2 = ["joão", " "]
+alunos3 = ["joão", ""]
+
+all(aluno1) # retorna True
+all(aluno2) # retorna True, porque o último elemento tem um espaço e portanto não está vazio
+all(aluno3) # retorna False, porque o último elemento está vazio
+```
+```
+numeros1 = [1,2,3]
+numeros2 = [1,0,2]
+
+all(numeros1) # retorna true
+all(numeros2) # retorna false, porque tem um elemento com valor 0 na lista
+```
+
+7. any() - retorna true se qualquer um dos elementos for true, ou seja, se a string estiver preenchida ou se o numero for diferente de 0
+
+8. len() - função que retorna o número de itens
+
+```
+numeros = [0,2,6]
+
+len(numeros) # 3
+```
+   
+9.  max() - função que retorna o maior item
+
+```
+numeros = [0,2,6]
+
+max(numeros) # 6
+```
+
+10. min() - função que retorna o menor item
+
+```
+numeros = [0,2,6]
+
+min(numeros) # 0
+```
+
 ### Tuplas (tuple): uma única entidade
 
 1. São semelhantes as listas[], porém com o uso de (). Também não podem ser modificadas durante a execução do programa
@@ -229,3 +274,211 @@ frutas.sort()  #ordena a lista de frutas
    - podemos utilizar valores negativos para as entradas também
     list(range(10, 0, -1))  # saída: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
    ```
+
+   ## Estrutura de Repetição For:
+
+   1. For é um dos comandos usado para percorrer uma lista no Python:
+
+   ```
+   restaurants = [
+       {"name": "Restaurante A", "nota": 4.5},
+       {"name": "Restaurante B", "nota": 3.0},
+       {"name": "Restaurante C", "nota": 4.2},
+       {"name": "Restaurante D", "nota": 2.3},
+]
+   for restaurant in restaurants:
+      if restaurant['nota'] > 3:
+         filter_restaurant.append(restaurant)
+      print(filter_restaurant)
+   ```
+   - O programa vai varrer toda a lista de restaurants e imprimir aqueles restaurants que tiverem a nota maior que 3. 
+
+   - Para cada repetição do nosso laço, um novo elemento da estrutura iterável é atribuído a variável de iteração.
+
+   2. Em alguns casos, podemos ainda querer percorrer uma sequência numérica, e para isto iteramos sobre a estrutura de dados range:
+
+   ```
+   for index in range(5):
+       print(index)
+   ```
+
+   3. Além de listas, várias outras estruturas são iteráveis, como strings (str), tuplas (tuple), conjuntos (set), dicionários (dict) e até mesmo arquivos. 
+
+   ### Compreensão de lista (list comprehension)
+
+   1. É uma maneira concisa de criação que executa uma operação em cada item da lista já existente
+
+   2. Quando uma nova lista é criada como resultado de uma iteração, podemos simplificar utilizando compreensão de listas:
+
+   ```
+   min_rating = 3.0
+   filtered_restaurants = [restaurant
+                         for restaurant in restaurants
+                         if restaurant["nota"] > min_rating]
+   print(filtered_restaurants)  
+   ```
+
+   3. Cria uma nova lista de strings com os nomes que contém a letra ‘a’:
+
+   ```
+   names_list = ['Duda', 'Rafa', 'Cris', 'Yuri']
+   new_names_list = [name for name in names_list if 'a' in name]
+
+   print(new_names_list)
+   ```
+
+   4. Uma compreensão de listas para criar uma lista com o quadrado dos números entre 1 e 10:
+
+   ```
+   quadrados = [x*x for x in range(11)]
+   print(quadrados)
+   ```
+
+   ## Estrutura de Repetição While:
+
+   1. A lista será percorrida até uma condição ser atendida. Veja o exemplo para uma sequência Fibonacci:
+
+   ```
+   n = 10
+   last, next = 0, 1
+   while last < n:
+      print(last)
+      last, next = next, last + next
+   ```
+
+   ## Estrutura de Repetição enumerate:
+
+   1. Quando se quer que uma variável mude em cada iteração do loop. Ao invés de criar e incrementar uma variável, podemos usar enumerate() do Python para obter um contador e o valor do iterável ao mesmo tempo:
+
+   ```
+   languages = ['Python', 'Java', 'JavaScript']
+
+   enumerate_prime = enumerate(languages)
+
+   - converte um objeto enumerate em uma lista
+   print(list(enumerate_prime))
+
+    - Saída: [(0, 'Python'), (1, 'Java'), (2, 'JavaScript')]
+   ```
+
+   2.  Desestruturando (unpack) os itens da lista ou tupla:
+
+   ```
+   languages = ['Python', 'Java', 'JavaScript']
+
+      for index, language in enumerate(['Python', 'Java']):
+      print(f'{index} - {language}')
+
+      - Saída:
+      0 - Python
+      1 - Java
+   ```
+
+## Funções
+
+1. As funções são definidas através da palavra reservada def, seguida por um nome e os parâmetros entre parênteses.
+
+2.  Todo bloco de código em Python, o caractere : define o início do bloco, e a indentação define seu fim.
+
+3. Os parâmetros podem ser passados de forma:
+
+- posicional: são aqueles definidos por meio da posição em que cada um é passado;
+- nomeada: são definidos por meio de seus nomes.
+
+```
+def soma(x, y):
+    return x + y
+
+soma(2, 2)  # os parâmetros aqui são posicionais
+
+soma(x=2, y=2)  # aqui estamos nomeando os parâmetros
+```
+
+4. Os parâmetros também podem ser variádicos, ou seja, variam em sua quantidade. Parâmetros posicionais variádicos são acessados como uma tupla no interior de uma função, e parâmetros nomeados variádicos como um dicionário:
+
+```
+def concat(*strings):
+    # Equivalente a um ", ".join(strings), que concatena os elementos de um iterável em uma string utilizando um separador
+
+    # Nesse caso a string resultante estaria separada por vírgula
+
+    final_string = ""
+    for string in strings:
+        final_string += string
+        if not string == strings[-1]:
+            final_string += ', '
+    return final_string
+
+# pode ser chamado com 2 parâmetros
+
+concat("Carlos", "Cristina")  # saída: "Carlos, Cristina"
+
+# pode ser chamado com um número n de parâmetros
+
+concat("Carlos", "Cristina", "Maria")  # saída: "Carlos, Cristina, Maria"
+
+# dict é uma função que já vem embutida no python
+
+dict(nome="Felipe", sobrenome="Silva", idade=25)  # cria um dicionário utilizando as chaves passadas
+
+dict(nome="Ana", sobrenome="Souza", idade=21, turma=1)  # o número de parâmetros passados para a função pode variar
+```
+
+5. As variáveis definidas dentro das funções tem escopo local. Porém, quando uma função não encontra um nome no escopo local, ela irá procurar no espaço de nomes global.
+
+6. Em alguns casos, podemos querer limitar um parâmetro em nomeado ou posicional para evitar ambiguidades e/ou aumentar legibilidade
+
+```
+len([1, 2, 3, 4])  # função len não aceita argumentos nomeados
+
+len(obj=[1, 2, 3, 4])  # este código irá falhar
+
+print("Coin", "Rodrigo", ", ")  # imprime Coin Rodrigo ,
+
+print("Coin", "Rodrigo", sep=", ")  # nomeando o terceiro parâmetro, agora temos a saída: Coin, Rodrigo
+``` 
+
+## Arquivos em Python:
+
+1. Todo arquivo com extensão .py, e é um módulo. Os Módulos são declarados utilizando snake case, ou seja, com nomes minúsculos e quando possuírem mais de uma palavra, devem ser separadas por underscore (_)
+
+## Docstring?
+
+1. As docstrings ''' ou """ no Python são os literais de string que aparecem logo após a definição de uma função, método, classe ou módulo:
+
+```
+def quadrado(n):
+    '''Recebe um número n, retorna o quadrado de n''' # Literal de string
+    return n**2
+```
+
+2. São usados para documentar o código e podemos acessar essas docstrings usando o atributo __doc__
+
+```
+def quadrado(n):
+    '''Recebe um número n, retorna o quadrado de n''' # Literal de string
+    return n**2
+print(quadrado.__doc__)
+
+# Saída
+Recebe um número n, retorna o quadrado de n
+```
+
+3. Docstrings para a função print() integrada:
+
+```
+print(print.__doc__)
+
+# Saída
+print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
+
+Imprime os valores em um fluxo, or em sys.stdout por padrão.
+Argumentos de palavras-chave opcionais:
+file: um objeto semelhante a um arquivo (fluxo); o padrão é o sys.stdout atual.
+sep: string inserida entre valores, o padrão é o espaço.
+end: string anexada após o último valor, o padrão é uma nova linha.
+flush: se deve forçar a descarga do fluxo.
+```
+
+
+
