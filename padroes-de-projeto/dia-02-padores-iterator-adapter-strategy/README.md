@@ -1,1 +1,3 @@
 # PADRÕES - ITERATOR, ADAPTER E STRATEGY :
+
+1. Iterator: 
