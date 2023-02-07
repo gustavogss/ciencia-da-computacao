@@ -1,6 +1,5 @@
 import requests
 
-
 try:
     # recurso demora muito a responder
     response = requests.get("http://httpbin.org/delay/10", timeout=2)

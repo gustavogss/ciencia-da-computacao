@@ -6,7 +6,7 @@
    
 3. A comunicação com servidores HTTP e HTTPS se dá através de requisições, nas quais utilizamos o verbo para indicar que tipo de ação deve ser tomada para um dado recurso. Devemos informar na requisição em qual recurso estamos atuando e no cabeçalho passamos algumas informações que podem ser importantes, como o tipo de resposta aceita ou o tipo de conteúdo sendo enviado
    
-4. O Python possui um pacote para lidar com o protocolo HTTP **requests** . E para instalar essa lib dentro de um ambiente virtual digitamos o seguinte comando:
+4. O Python possui um pacote para lidar com o protocolo HTTP e HTTPs que é o **requests** . E para instalar essa lib dentro de um ambiente virtual digitamos o seguinte comando:
    
    ```
    python3 -m venv .venv && source .venv/bin/activate
@@ -67,15 +67,26 @@
    ```
     import requests
 
-
     try:
         # recurso demora muito a responder
         response = requests.get("http://httpbin.org/delay/10", timeout=2)
-    except requests.ReadTimeout:
+    except requests.Timeout:
         # vamos fazer uma nova requisição
-        response = requests.get("http://httpbin.org/delay/1", timeout=2)
+        response = requests.get("http://httpbin.org/delay/1", timeout=5)
     finally:
         print(response.status_code)
 
    ```
-3. 
+
+3. Analisando respostas:
+
+- parsel - é a biblioteca que serve para ler o contéudo vindo de uma requisição.
+  
+- Para instalar o parsel:
+  
+```
+python3 -m pip install parsel
+```
+
+4. 
+   
