@@ -1,1 +1,0 @@
-# RASPAGEM DE DADOS :
