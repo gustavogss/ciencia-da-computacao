@@ -149,4 +149,79 @@ def do_something(array1, array2):
 
 ## Complexidade Exponencial e Fatorial:
 
-1. 
+1. Essas complexidades caracterizam algoritmos que, para aumentos pequenos no tamanho da entrada, aumentam enormemente o número de operações a serem realizadas para serem executados e, consequentemente, seu tempo de execução.
+   
+   - Exponencial: 2ⁿ (O(2ⁿ))
+
+   - Fatorial: n! (O(n!))
+  
+2. No caso de um algoritmo com Ordem de Complexidade Exponencial, para uma entrada de dados n que possui vinte elementos, o algoritmo realizará aproximadamente um milhão (ou 2²⁰) de operações. Para o caso fatorial, os mesmos vinte elementos rendem 24 quatrilhões de operações! (O número exato é: 2432902008176640000 operações 😨).
+   
+## Analisando Algoritmos:
+
+```
+def calculations(n):
+    number1 = 0
+    for n1 in range(n):
+        number1 += n1
+
+    number2 = 0
+    for n1 in range(n):
+       for n2 in range(n):
+            number2 += n1 + n2
+
+    number3 = 0
+    for n1 in range(n):
+       for n2 in range(n):
+           for n3 in range(n):
+               number3 += n1 + n2 + n3
+
+    return number1, number2, number3
+
+n1, n2, n3 = calculations(100)
+print(f'{n1}, {n2}, {n3}')
+```
+
+- Esse algoritmo tem três estruturas de repetição: uma linear, uma quadrática e uma cúbica. Qual é a Ordem de Complexidade dele? 
+Seria O(n + n² + n³), lembrando que se os loops estão aninhados você os multiplica, e se estão paralelos você os soma. 
+
+- Para calcular a análise de complexidade dessa algoritmo, basta pegar a estrutura de maior ordem de complexidade (o pior caso) e desconsiderar os múltiplos: O(n³)
+  
+## Melhor caso, pior caso e caso médio:
+
+1. Isso quer dizer: A depender da minha entrada, o meu algoritmo pode executar em O(1) ou O(n)
+   
+2. Analisando o algoritmo:
+
+```
+def linear_search(numbers, target):
+    n = len(numbers) # N será a quantidade de elementos da lista
+    for index in range(0, n): # vamos iterar a lista completa
+        if numbers[index] == target: # se encontrar o elemento alvo, retorne a posição
+            return index
+
+    return -1 # Não encontrou? Retorne -1
+
+
+print(linear_search([1, 2, 3], 2))  # saída: 1
+print(linear_search([1, 2, 3], 4))  # saída: -1 
+```
+
+- Nesse caso, mesmo para uma entrada infinita, nossa complexidade será O(1). Esse é o melhor caso desse algoritmo. De forma análoga, o pior caso é o número ser o último elemento do array, ou seja O(n).
+
+- O caso médio aqui seria algo como O(n * 1/2), por exemplo. Nesse caso, o número que procuramos está no meio da lista. Mas, para entradas muito grandes, aprendemos a desprezar os números menos relevantes da soma, então, podemos simplificar e dizer que o caso médio é O(n) também.
+
+3. Diferentes algoritmos têm diferentes cenários de melhor caso, pior caso e caso médio
+   
+4. Problemas que não têm solução conhecida em tempo polinomial, e que podem ser resolvidos apenas com força bruta, com complexidades exponencial ou fatorial, são chamados NP Completo.
+
+## Quais as complexidades dos algoritmos?
+
+- Constantes: O(1);
+- Logarítmicos: O(log n);
+- Linear: O(n);
+- Quadráticos: O(n²);
+- Cúbicos: O(n³);
+- Exponencial: O(2ⁿ);
+- Fatorial: O(n!).
+
