@@ -225,3 +225,8 @@ print(linear_search([1, 2, 3], 4))  # saída: -1
 - Exponencial: O(2ⁿ);
 - Fatorial: O(n!).
 
+1. timeit é uma lib em python que serve para medir o tempo de execução de um algoritmo:
+
+```
+from timeit import timeit
+```
