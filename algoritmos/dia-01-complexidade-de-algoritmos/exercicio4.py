@@ -12,4 +12,4 @@ print(kids_with_candies([2, 3, 5, 1, 3], 3))
 """Para os três casos, utilizando a função `max()`, a complexidade será O(n). 
 A lista da função `max()` também é executada em O(n). Ou seja, O(n) + O(n) = O(n). 
 A complexidade de espaço também é O(n), pois quanto mais crianças temos, maior vai 
-ser o tamanho da lista gerada. """
+ser o tamanho da lista gerada."""
